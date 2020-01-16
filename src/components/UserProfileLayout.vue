@@ -73,7 +73,7 @@ export default {
 	.menu-movil {
 		background-color: white;
 		bottom: 0;
-		left: -100%;
+		left: -110%;
 		position: absolute;
 		top: 0;
 		transition: left 200ms ease-in-out;
