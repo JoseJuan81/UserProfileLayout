@@ -1,4 +1,5 @@
 # user-profile-layout
+<img src="https://travis-ci.org/JoseJuan81/UserProfileLayout.svg?branch=dev">
 
 ## Project setup
 ```
