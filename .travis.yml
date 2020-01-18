@@ -17,7 +17,8 @@ script:
   - npm run dev &
   # run all Cypress tests and record on the dashboard
   # the projectId and key from testRunner > runs configurations (cypress test interface)
-  - npm run cy:run -- --record --key bcc44677-a17f-423b-aeec-6cb07be391fc
+  # - npm run cy:run -- --record --key bcc44677-a17f-423b-aeec-6cb07be391fc
+  - npm run cy:run
   # after all tests finish running we need
   # to kill all background jobs (like "npm start &")
   # this avoids flake in Travis jobs
