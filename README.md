@@ -1,5 +1,9 @@
 # user-profile-layout
 <img src="https://travis-ci.org/JoseJuan81/UserProfileLayout.svg?branch=dev">
+<a href="https://www.npmjs.com/package/responsive-table-dl">
+	<img src="https://img.shields.io/npm/v/responsive-table-dl.svg" alt="Version">
+</a>
+<img alt="GitHub" src="https://img.shields.io/github/license/josejuan81/UserProfileLayout">
 
 ## Project setup
 ```
