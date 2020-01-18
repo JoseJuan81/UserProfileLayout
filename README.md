@@ -5,6 +5,7 @@
 		<img src="https://img.shields.io/npm/v/responsive-table-dl.svg" alt="Version">
 	</a>
 	<img alt="GitHub" src="https://img.shields.io/github/license/josejuan81/UserProfileLayout">
+	<img alt="GitHub" src="https://img.shields.io/github/license/josejuan81/responsive-table">
 </p>
 
 ## Project setup
