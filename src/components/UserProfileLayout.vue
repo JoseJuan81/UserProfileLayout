@@ -27,6 +27,10 @@ function created() {
 	});
 }
 
+function beforeDestroy() {
+	window.removeEventListener('resize');
+}
+
 function data() {
 	return {
 		movil: false,
@@ -35,6 +39,7 @@ function data() {
 
 export default {
 	name: 'user-profile-layout',
+	beforeDestroy,
 	created,
 	data,
 	props: {

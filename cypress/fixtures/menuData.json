@@ -1,0 +1,10 @@
+{
+	"menuData": [
+		{ "title": "Mis Datos Personales", "text": "Estos son mis datos personales" },
+		{ "title": "Mis Pedidos", "text": "Tengo 1022 pedidos realizados" },
+		{ "title": "Mis Direcciones", "text": "Estas son mis direcciones de envio" },
+		{ "title": "Mis Gastos", "text": "Hasta la fecha he gastado 4577" },
+		{ "title": "Mis Favoritos", "text": "Estos son mis productos favoritos" },
+		{ "title": "Configuracion de cuenta", "text": "Aqui configuro mi cuenta" }
+	]
+}
