@@ -8,10 +8,11 @@
 			<template v-slot:aside>
 				<ul>
 					<li>Mis Pedidos</li>
-					<li>Mis Datos</li>
+					<li>Mis Datos personales</li>
 					<li>Mis Direcciones</li>
 					<li>Mis Gastos</li>
 					<li>Mis Favoritos</li>
+					<li>Configuración de mi cuenta</li>
 				</ul>
 			</template>
 			<template v-slot:main-content>
@@ -26,10 +27,11 @@
 					>regresar</button>
 					<ul class="movil">
 						<li>Mis Pedidos</li>
-						<li>Mis Datos</li>
+						<li>Mis Datos personales</li>
 						<li>Mis Direcciones</li>
 						<li>Mis Gastos</li>
 						<li>Mis Favoritos</li>
+						<li>Configuración de mi cuenta</li>
 					</ul>
 				</div>
 			</template>
@@ -74,7 +76,6 @@ export default {
 			list-style: none;
 			padding: 1rem 3rem;
 			text-align: left;
-			white-space: nowrap;
 		}
 	}
 
