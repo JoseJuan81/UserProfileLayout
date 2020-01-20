@@ -264,7 +264,7 @@ __vue_render__._withStripped = true;
 function install(Vue) {
 	if (install.intalled) { return; }
 	install.installed = true;
-	Vue.component('UserProfileLayout', __vue_component__);
+	Vue.component('user-profile-layout', __vue_component__);
 }
 
 var plugin = {

@@ -3,7 +3,7 @@ import UserProfileLayout from './components/UserProfileLayout.vue'
 export function install(Vue) {
 	if (install.intalled) return;
 	install.installed = true;
-	Vue.component('UserProfileLayout', UserProfileLayout);
+	Vue.component('user-profile-layout', UserProfileLayout);
 }
 
 const plugin = {
