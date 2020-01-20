@@ -1,6 +1,6 @@
 {
 	"name": "user-profile-layout",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"main": "rollup/UserProfileLayout.umd.js",
 	"module": "rollup/UserProfileLayout.esm.js",
 	"unpkg": "rollup/UserProfileLayout.min.js",

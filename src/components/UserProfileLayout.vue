@@ -1,10 +1,10 @@
 <template>
 	<div class="layout-main-container">
 		<div class="container-layout">
-			<aside v-show="!movil">
+			<aside class="aside-container" v-show="!movil">
 				<slot name="aside"></slot>
 			</aside>
-			<section>
+			<section class="section-container">
 				<slot name="main-content"></slot>
 			</section>
 		</div>
@@ -66,11 +66,11 @@ export default {
 		justify-content: flex-start;
 	}
 
-	aside {
+	.aside-container {
 		flex-basis: 17%;
 	}
 
-	section {
+	.section-container {
 		flex-basis: auto;
 		flex-grow: 1;
 	}
