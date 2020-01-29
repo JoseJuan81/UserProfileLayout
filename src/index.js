@@ -1,4 +1,4 @@
-import UserProfileLayout from './components/UserProfileLayout.vue'
+import UserProfileLayout from './components/UserProfileLayout.vue';
 
 export function install(Vue) {
 	if (install.intalled) return;

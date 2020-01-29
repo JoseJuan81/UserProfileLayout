@@ -1,9 +1,8 @@
 # user-profile-layout
 <p align="center">
 	<img src="https://travis-ci.org/JoseJuan81/UserProfileLayout.svg?branch=dev">
-	<img alt="GitHub package.json version (branch)" src="https://img.shields.io/github/package-json/v/josejuan81/UserProfileLayout/dev">
 	<img alt="GitHub" src="https://img.shields.io/github/license/josejuan81/UserProfileLayout">
-	<img alt="npm" src="https://img.shields.io/npm/dm/UserProfileLayout">
+	<img alt="npm" src="https://img.shields.io/npm/dm/user-profile-layout">
 </p>
 
 ## Demo
