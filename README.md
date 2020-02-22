@@ -25,9 +25,9 @@ npm i user-profile-layout
 ## Vue Use
 Global use
 ```js
-import UserProfileLayout from 'user-profile-layout';
+import { install } from 'user-profile-layout';
 
-Vue.use(UserProfileLayout);
+Vue.use(install);
 ```
 Local Use
 
