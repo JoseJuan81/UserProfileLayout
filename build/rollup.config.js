@@ -7,7 +7,7 @@ export default {
 	output: {
 		exports: 'named',
 		globals: {
-			vue: 'Vue', // vue as global variable in SSR
+			btoa: 'btoa', // btoa as global variable in SSR
 		},
 		name: 'userProfileLayout',
 	},
