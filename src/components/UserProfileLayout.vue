@@ -22,13 +22,15 @@
 
 function created() {
 	this.movil = window.innerWidth <= this.breakPoint;
-	window.addEventListener('resize', () => {
-		this.movil = window.innerWidth <= this.breakPoint;
-	});
+	window.addEventListener('resize', this.handlerResize);
 }
 
 function beforeDestroy() {
-	window.removeEventListener('resize');
+	window.removeEventListener('resize', this.handlerResize);
+}
+
+function handlerResize() {
+	this.movil = window.innerWidth <= this.breakPoint;
 }
 
 function data() {
@@ -42,6 +44,9 @@ export default {
 	beforeDestroy,
 	created,
 	data,
+	methods: {
+		handlerResize,
+	},
 	props: {
 		breakPoint: {
 			default: 768,
