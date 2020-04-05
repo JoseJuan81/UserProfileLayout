@@ -5,8 +5,11 @@ import buble from '@rollup/plugin-buble'; // Transpile/polyfill with reasonable 
 export default {
 	input: 'src/index.js', // Path relative to package.json
 	output: {
-		name: 'user-profile-layout',
 		exports: 'named',
+		globals: {
+			vue: 'Vue', // vue as global variable in SSR
+		},
+		name: 'userProfileLayout',
 	},
 	plugins: [
 		commonjs(),
