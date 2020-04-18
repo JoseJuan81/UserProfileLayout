@@ -1,17 +1,17 @@
 <template>
-	<div class="layout-main-container">
-		<div class="container-layout">
-			<aside class="aside-container" v-show="!movil">
+	<div class="dl-layout-main-container">
+		<div class="dl-container-layout">
+			<aside class="dl-aside-container" v-show="!movil">
 				<slot name="aside"></slot>
 			</aside>
-			<section class="section-container">
+			<section class="dl-section-container">
 				<slot name="main-content"></slot>
 			</section>
 		</div>
 		<div
 			:class="[
-				'menu-movil',
-				{ 'show-menu-movil': show && movil },
+				'dl-menu-movil',
+				{ 'dl-show-menu-movil': show && movil },
 			]"
 		>
 			<slot name="menu-movil"></slot>
@@ -60,27 +60,27 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-	.layout-main-container {
+<style lang="scss">
+	.dl-layout-main-container {
 		height: 100%;
 	}
 
-	.container-layout {
+	.dl-container-layout {
 		align-items: flex-start;
 		display: flex;
 		justify-content: flex-start;
 	}
 
-	.aside-container {
+	.dl-aside-container {
 		flex-basis: 17%;
 	}
 
-	.section-container {
+	.dl-section-container {
 		flex-basis: auto;
 		flex-grow: 1;
 	}
 
-	.menu-movil {
+	.dl-menu-movil {
 		background-color: white;
 		bottom: 0;
 		left: -110%;
@@ -90,7 +90,7 @@ export default {
 		z-index: 99
 	}
 
-	.show-menu-movil {
+	.dl-show-menu-movil {
 		left: 0%;
 	}
 </style>
