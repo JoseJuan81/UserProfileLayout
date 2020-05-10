@@ -6,10 +6,7 @@ export default {
 	input: 'src/index.js', // Path relative to package.json
 	output: {
 		exports: 'named',
-		globals: {
-			btoa: 'btoa', // btoa as global variable in SSR
-		},
-		name: 'userProfileLayout',
+		name: 'UserProfileLayout',
 	},
 	plugins: [
 		commonjs(),
