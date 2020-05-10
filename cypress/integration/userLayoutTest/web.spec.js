@@ -16,7 +16,7 @@ context('Layout version WEB', () => {
 			.children()
 			.should('have.length', 2)
 			.eq(0)
-			.should('have.class', 'container-layout')
+			.should('have.class', 'dl-container-layout')
 			.children()
 			.should('have.length', 2)
 			.each((child, index) => {

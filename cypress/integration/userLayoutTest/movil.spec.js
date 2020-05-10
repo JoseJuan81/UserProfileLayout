@@ -22,7 +22,7 @@ context('Layout version MOVIL', () => {
 			cy.get('[data-cy=menu-movil]')
 				.should('exist')
 				.parent()
-				.should('have.class', 'show-menu-movil')
+				.should('have.class', 'dl-show-menu-movil')
 				.children()
 				.eq(0)
 				.should('have.class', 'wrapper-menu-movil')
@@ -47,6 +47,6 @@ context('Layout version MOVIL', () => {
 			cy.get('[data-cy=menu-movil]')
 				.should('exist')
 				.parent()
-				.should('not.have.class', 'show-menu-movil');
+				.should('not.have.class', 'dl-show-menu-movil');
 	})
 });
