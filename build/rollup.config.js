@@ -13,6 +13,7 @@ export default {
 		vue({
 			css: true, // Dynamically inject css as a <style> tag
 			compileTemplate: true, // Explicitly convert template to render function
+			template: { optimizeSSR: true }
 		}),
 		buble(), // Transpile to ES5
 	],
