@@ -20,7 +20,7 @@
 </template>
 <script>
 
-function created() {
+function mounted() {
 	this.movil = window.innerWidth <= this.breakPoint;
 	window.addEventListener('resize', this.handlerResize);
 }
@@ -42,11 +42,11 @@ function data() {
 export default {
 	name: 'user-profile-layout',
 	beforeDestroy,
-	created,
 	data,
 	methods: {
 		handlerResize,
 	},
+	mounted,
 	props: {
 		breakPoint: {
 			default: 768,

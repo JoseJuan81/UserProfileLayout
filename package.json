@@ -1,13 +1,14 @@
 {
 	"name": "user-profile-layout",
 	"version": "0.1.13",
-	"main": "rollup/UserProfileLayout.umd.js",
-	"module": "rollup/UserProfileLayout.esm.js",
+	"main": "rollup/UserProfileLayout.ssr.js",
+	"module": "rollup/UserProfileLayout.umd.js",
 	"unpkg": "rollup/UserProfileLayout.min.js",
 	"browser": {
 		"./sfc": "src/components/UserProfileLayout.vue"
 	},
 	"scripts": {
+		"build:2": "rollup --config build/rollup.config.js",
 		"build": "npm run build:umd & npm run build:es & npm run build:unpkg",
 		"build:es": "rollup --config build/rollup.config.js --format es --file rollup/UserProfileLayout.esm.js",
 		"build:umd": "rollup --config build/rollup.config.js --format umd --file rollup/UserProfileLayout.umd.js",
