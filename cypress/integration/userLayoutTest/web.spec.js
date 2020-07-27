@@ -1,7 +1,7 @@
 
 context('Layout version WEB', () => {
 	beforeEach(() => {
-		cy.visit('localhost:8087');
+		cy.visit('localhost:3000/multiselector');
 	})
 	it('El activador del menu movil oculto', () => {
 		it('Verficar este oculto', () => {

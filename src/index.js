@@ -1,10 +1,12 @@
-import UserProfileLayout from './components/UserProfileLayout.vue';
+import UserProfileLayout from './components/user-profile-layout.vue';
 
-export function install(Vue) {
+const install = function install(Vue) {
 	if (install.intalled) return;
 	install.installed = true;
-	Vue.component('user-profile-layout', UserProfileLayout);
-}
+	Vue.component(UserProfileLayout.name, UserProfileLayout);
+};
+
+UserProfileLayout.install = install;
 
 const plugin = {
 	install,

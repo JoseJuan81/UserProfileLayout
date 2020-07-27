@@ -1,6 +1,6 @@
 context('Layout version MOVIL', () => {
 	beforeEach(() => {
-		cy.visit('localhost:8087');
+		cy.visit('localhost:3000/multiselector');
 		cy.viewport(550, 700);
 	})
 	it('El activador del menu movil se muestra', () => {

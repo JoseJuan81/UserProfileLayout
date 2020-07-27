@@ -48,7 +48,7 @@
 </template>
 
 <script>
-import UserProfileLayout from '@/components/UserProfileLayout.vue';
+import UserProfileLayout from '@/components/user-profile-layout.vue';
 
 function data() {
 	return {

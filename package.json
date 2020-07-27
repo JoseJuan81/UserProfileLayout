@@ -1,18 +1,18 @@
 {
 	"name": "user-profile-layout",
-	"version": "0.1.13",
-	"main": "rollup/UserProfileLayout.ssr.js",
-	"module": "rollup/UserProfileLayout.umd.js",
-	"unpkg": "rollup/UserProfileLayout.min.js",
+	"version": "0.1.14",
+	"main": "lib/user-profile-layout.umd.js",
+	"module": "lib/user-profile-layout.esm.js",
+	"unpkg": "lib/user-profile-layout.min.js",
 	"browser": {
-		"./sfc": "src/components/UserProfileLayout.vue"
+		"./sfc": "src/components/user-profile-layout.vue"
 	},
 	"scripts": {
-		"build:2": "rollup --config build/rollup.config.js",
-		"build": "npm run build:umd & npm run build:es & npm run build:unpkg",
-		"build:es": "rollup --config build/rollup.config.js --format es --file rollup/UserProfileLayout.esm.js",
-		"build:umd": "rollup --config build/rollup.config.js --format umd --file rollup/UserProfileLayout.umd.js",
-		"build:unpkg": "rollup --config build/rollup.config.js --format iife --file rollup/UserProfileLayout.min.js",
+		"build": "npm run build:umd & npm run build:es & npm run build:unpkg && npm run build:ssr",
+		"build:es": "rollup --config build/rollup.config.js --format es --file lib/user-profile-layout.esm.js",
+		"build:umd": "rollup --config build/rollup.config.js --format umd --file lib/user-profile-layout.umd.js",
+		"build:unpkg": "rollup --config build/rollup.config.js --format iife --file lib/user-profile-layout.min.js",
+		"build:ssr": "SSR=true rollup --config build/rollup.config.js --format cjs --file lib/ssr.js",
 		"cy:run": "cypress run",
 		"dev": "vue-cli-service serve",
 		"lint": "vue-cli-service lint",
