@@ -1,6 +1,6 @@
 {
 	"name": "user-profile-layout",
-	"version": "0.1.14",
+	"version": "1.0.0",
 	"main": "lib/user-profile-layout.umd.js",
 	"module": "lib/user-profile-layout.esm.js",
 	"unpkg": "lib/user-profile-layout.min.js",

@@ -2,11 +2,14 @@
 	<div class="dl-layout-main-container">
 		<div class="dl-container-layout">
 			<aside class="dl-aside-container" v-show="!movil">
-				<slot name="aside"></slot>
+				<slot name="asideLeft"></slot>
 			</aside>
 			<section class="dl-section-container">
 				<slot name="main-content"></slot>
 			</section>
+			<aside class="dl-aside-container" v-show="!movil">
+				<slot name="asideRight"></slot>
+			</aside>
 		</div>
 		<div
 			:class="[
@@ -65,29 +68,13 @@ export default {
 		height: 100%;
 	}
 
-	.dl-container-layout {
-		align-items: flex-start;
-		display: flex;
-		justify-content: flex-start;
-	}
-
-	.dl-aside-container {
-		flex-basis: 17%;
-	}
-
-	.dl-section-container {
-		flex-basis: auto;
-		flex-grow: 1;
-	}
-
 	.dl-menu-movil {
-		background-color: white;
 		bottom: 0;
 		left: -110%;
 		position: absolute;
 		top: 0;
 		transition: left 200ms ease-in-out;
-		z-index: 99
+		z-index: 99;
 	}
 
 	.dl-show-menu-movil {
