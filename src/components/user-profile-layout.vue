@@ -1,13 +1,13 @@
 <template>
 	<div class="dl-layout-main-container">
 		<div class="dl-container-layout">
-			<aside class="dl-aside-container" v-show="!movil">
+			<aside class="dl-aside-container-left" v-show="!movil">
 				<slot name="asideLeft"></slot>
 			</aside>
 			<section class="dl-section-container">
 				<slot name="main-content"></slot>
 			</section>
-			<aside class="dl-aside-container" v-show="!movil">
+			<aside class="dl-aside-container-right" v-show="showRight">
 				<slot name="asideRight"></slot>
 			</aside>
 		</div>
@@ -56,6 +56,10 @@ export default {
 			type: Number,
 		},
 		show: {
+			default: false,
+			type: Boolean,
+		},
+		showRight: {
 			default: false,
 			type: Boolean,
 		},
